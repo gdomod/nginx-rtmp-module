@@ -584,6 +584,10 @@ ngx_int_t ngx_rtmp_send_play_status(ngx_rtmp_session_t *s, char *code,
 ngx_int_t ngx_rtmp_send_sample_access(ngx_rtmp_session_t *s);
 
 
+/* CUSTOM MAKITOX MOD */
+ngx_int_t ngx_rtmp_send_fcpublish(ngx_rtmp_session_t *s, char *desc);
+ngx_int_t ngx_rtmp_send_fcunpublish(ngx_rtmp_session_t *s, char *desc);
+
 /* Frame types */
 #define NGX_RTMP_VIDEO_KEY_FRAME            1
 #define NGX_RTMP_VIDEO_INTER_FRAME          2
